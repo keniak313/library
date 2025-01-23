@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="./scripts.js" defer></script>
     <script src="https://kit.fontawesome.com/42352751c9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="header">
         <h1>My Library</h1>
-        <button id="newBook">Add book <i class="fa-solid fa-book"></i></button>
-        <h2>Books: 88</h2>
+        <button id="newBook">Add book <i class="fa-solid fa-square-plus"></i></button>
     </div>
 
     <dialog id="newBookDialog">
         <div class="box">
             <form method="dialog" id="addBookForm">
-                <h3>Book information:</h3>
+                <h3>ADD NEW BOOK</h3>
                 <!-- <label for="title">Title:</label> -->
                 <input type="text" name="title" title="title" placeholder="Title" required>
                 <!-- <label for="author">Author:</label> -->
@@ -30,8 +29,8 @@
                     <input type="checkbox" name="status" title="status">
                 </div>
             </form>
-            <button type="submit" id="addBook" form="addBookForm">Add</button>
-            <button id="closeDialog">CLOSE</button>
+            <button type="submit" id="addBook" form="addBookForm"><i class="fa-solid fa-square-plus"></i></button>
+            <button id="closeDialog"><i class="fa-solid fa-rectangle-xmark"></i></button>
         </div>
     </dialog>
 
@@ -47,13 +46,9 @@
                 <div class="pages">256</div>
                 <i class="fa-regular fa-file-lines"></i>
             </div>
-            <div class="boxButtons">
-                <button class="removeBook">Remove</button>
-                <button class="changeStatus">Read</button>
-            </div>
-            <!-- <div class="status">Status</div> -->
+            <button class="removeBook"><i class="fa-solid fa-square-minus"></i></button>
+            <button class="changeStatus"><i class="fa-solid fa-square-check"></i></button>
         </div>
     </div>
-
 </body>
 </html>

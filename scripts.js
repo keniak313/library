@@ -123,6 +123,7 @@ function createItem(book){
 
     if(book.status){
         itemClone.classList.toggle("read");
+        itemClone.querySelector(".changeStatus").classList.toggle("btnRead");
     }
 
     container.appendChild(itemClone);
@@ -131,6 +132,7 @@ function createItem(book){
 function updateStatus(book, item){
     book.status = book.status ? false : true; 
     item.classList.toggle("read");
+    item.querySelector(".changeStatus").classList.toggle("btnRead");
     updateStorage();
 }
 
@@ -152,8 +154,7 @@ function updateBooks(){
 }
 
 function updateStorage(){
-    localStorage.setItem("books", JSON.stringify(myLibrary))
-    console.log(JSON.parse(localStorage.getItem("books")))
+    localStorage.setItem("books", JSON.stringify(myLibrary));
 }
 
 function checkStorage(){
