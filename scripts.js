@@ -158,7 +158,7 @@ function updateStorage(){
 }
 
 function checkStorage(){
-    if (localStorage){
+    if (localStorage.length != 0){
         myLibrary = JSON.parse(localStorage.getItem("books"));
         myLibrary.forEach(book =>{
             book.added = false;
