@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&family=Smooch+Sans:wght@100..900&display=swap');
 
 :root{
-    --color-accent:rgb(237, 113, 241);
-    --color-green:rgb(105, 211, 56) ;
-    --color-red:rgba(226, 103, 103, 1);
-    --color-white:rgb(255, 255, 255);
-    --color-black:rgb(26, 27, 27);
-    --color-gray:rgba(75, 78, 80, 0.5);
-    --color-lightgray:rgba(75, 78, 80, 0.1);
-    --color-bg:rgb(240, 240, 240);
+    --color-accent:rgb(240, 145, 68);
+    --color-green:rgb(142, 189, 33) ;
+    --color-red:rgb(214, 113, 95);
+    --color-white:rgb(240, 236, 231);
+    --color-black:rgb(97, 63, 44);
+    --color-gray:rgba(136, 86, 52, 0.5);
+    --color-lightgray:rgba(80, 72, 68, 0.1);
+    --color-bg:rgb(238, 232, 221);
 
-    --shadow-blurred:rgba(0,0,0,0.5) 0px 0px 4px;
+    --shadow-blurred:rgba(143, 99, 33, 0.5) 0px 0px 4px;
 }
 
 
@@ -89,6 +89,7 @@ dialog, .item{
     outline-offset: -5px;
     outline-width: 2px;
     outline-color: var(--color-black);
+    color:var(--color-black);
     outline-style: solid;
     font-size: 1.5rem;
 }
@@ -139,6 +140,8 @@ dialog[open] {
 
 dialog{
     box-shadow: var(--shadow-blurred);
+    background-color: var(--color-white);
+    color: var(--color-black);
     border-style: none;
     opacity: 0;
     transform: translateY(0px);
