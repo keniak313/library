@@ -131,6 +131,8 @@ dialog, .item{
 
 .read{
     background: linear-gradient(var(--color-green) 1rem, var(--color-white) 0);
+    border-style: solid;
+    border-color: var(--color-green);
 }
 
 dialog[open] {
@@ -282,7 +284,6 @@ button.removeBook{
 
 button:hover{
     opacity: 0.8;
-    background-color: var(--color-gray) !important;
 }
 
 button:active{
